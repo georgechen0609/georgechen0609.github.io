@@ -12,8 +12,13 @@
 
 <body>
 
+<!-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r78/three.min.js"></script>
 <script src="https://threejs.org/examples/js/controls/OrbitControls.js"></script>
+-->
+
+<script src="http://cdnjs.cloudflare.com/ajax/libs/three.js/r70/three.min.js"></script>
+<script src="https://dl.dropboxusercontent.com/u/3587259/Code/Threejs/OrbitControls.js"></script>
 
 <script>
 
@@ -39,7 +44,7 @@ function init() {
 
 	camera = new THREE.PerspectiveCamera (45, width/height, 1, 10000);
 	camera.position.y = 32;
-	camera.position.z = 80;
+	camera.position.z = 50;
 	camera.lookAt (new THREE.Vector3(0,0,0));
 
 	controls = new THREE.OrbitControls (camera, render.domElement);
